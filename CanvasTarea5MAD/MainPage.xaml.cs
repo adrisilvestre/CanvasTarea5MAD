@@ -3,16 +3,11 @@ using SkiaSharp.Views.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace CanvasTarea5MAD
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -46,9 +41,9 @@ namespace CanvasTarea5MAD
                 Color = SKColors.Orange,
                 TextSize = 80
             };
-
          
-            canvas.DrawText("AdriSharp", 60, 160, textPaint);
+            canvas.DrawText("AdriSharp", 60, 160, textPaint); //custom default text
+
             SKPaint TouchPathStroke = new SKPaint
             {
                 IsAntialias = true,
@@ -56,7 +51,6 @@ namespace CanvasTarea5MAD
                 Color = TouchPathStrokeSelected.Color,
                 StrokeWidth = 5
             };
-
 
             foreach (var touchPath in TemporaryPaths)
             {
@@ -66,9 +60,9 @@ namespace CanvasTarea5MAD
             {
                 canvas.DrawPath(touchPath, TouchPathStroke);
             }
-        }
 
-       
+        }
+ 
         private void OnTouch(SKCanvasView sender, SKTouchEventArgs e)
         {
             switch (e.ActionType)
@@ -98,15 +92,13 @@ namespace CanvasTarea5MAD
         { 
             Paths.Clear();
             TemporaryPaths.Clear();
-            PaintSample.InvalidateSurface();
-           
+            PaintSample.InvalidateSurface();  
         }
         private void ColorSelection(object obj, EventArgs args)
         {
             var button = (Button)obj;
             TouchPathStrokeSelected.Color = button.BackgroundColor.ToSKColor();
             PaintSample.InvalidateSurface();
-
         }
 
 

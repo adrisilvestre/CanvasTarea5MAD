@@ -10,9 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanvasTarea5MAD", "CanvasTarea5MAD\CanvasTarea5MAD.csproj", "{D5BC082A-5896-479C-855F-DE3032FE430F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{252466D9-4E7C-405B-9F23-D19247896B03}"
-	ProjectSection(SolutionItems) = preProject
-		FodyWeavers.xml = FodyWeavers.xml
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
