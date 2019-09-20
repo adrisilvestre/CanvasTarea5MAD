@@ -1,7 +1,7 @@
 # CanvasTarea5MAD
 SkiaSharp Basic Implementation - Basic Drawing App\
 **References:**
-[](https://askxammy.com/painting-your-screen-with-xamarin-forms/)\
+https://askxammy.com/painting-your-screen-with-xamarin-forms/
 
 #### Packages used:
 - SkiaSharp
