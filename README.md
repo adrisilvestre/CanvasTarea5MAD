@@ -1,6 +1,6 @@
 # CanvasTarea5MAD
 SkiaSharp Basic Implementation - Basic Drawing App\
-**References:**
+**References:**\
 https://askxammy.com/painting-your-screen-with-xamarin-forms/
 
 #### Packages used:
@@ -17,4 +17,4 @@ https://askxammy.com/painting-your-screen-with-xamarin-forms/
 - Export feature
 - Import feature
 - Individual color variation
-- User controlled brushes's thickness
+- User-controlled brushes's thickness
